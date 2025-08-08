@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* Configuração geral do corpo da página */
+
+body {
+
+    background-color:whitesmoke;
+}
+h1{
+    color:rgb(51, 5, 218);
+    padding: 10px;
+}
+p{ 
+    color:goldenrod;
+
+    
+}
