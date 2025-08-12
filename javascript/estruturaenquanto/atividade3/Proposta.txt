@@ -1,0 +1,1 @@
+Ler 3 números inteiros positivos e exibir a soma dos números que não divisiveis por 5
