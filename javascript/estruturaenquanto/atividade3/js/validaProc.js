@@ -1,19 +1,23 @@
 function validaProc(){
+
+    let num
+    let soma=0
+    let cont=1
     
-    let numero, contador=1, soma=0
-
-    console.log("=== Soma de números divisíveis por 5 ===")
-
-    while(contador<=3){
-        numero=parseInt(prompt("Insira o "+contador+"º número: "));
-        console.log(numero);
-            if(numero % 5==0){
-                soma+=numero
-            }
-        contador++
+    
+        while(cont<=3){
+         
+          num=parseInt(prompt("Digite o número"));
+          console.log("O número inserido é: "+ num);
+            
+        
+            if (num % 5 == 0) {
+                 soma+=num
+                }
+         
+                cont++
+     
+        }
+        console.log("O número e: "+soma);
+        return false
     }
-    
-    console.log("")
-    console.log("A soma dos números divisíveis por 5 é: "+soma);
-    return false;
-}

@@ -1,1 +1,1 @@
-Ler 3 números inteiros positivos e exibir a soma dos números que não divisiveis por 5
+Faça um algorítmo que leia 3 números e imprima o maior 
