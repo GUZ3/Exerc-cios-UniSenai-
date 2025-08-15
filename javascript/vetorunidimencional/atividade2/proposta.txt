@@ -1,0 +1,2 @@
+Faça um algoritmo para ler as notas obtidas pelos aluno, e depois exibir um relatório das notas iguais ou superiores a 7,5.
+ e  a quantidade de notas iguais ou superiores a 7,5
