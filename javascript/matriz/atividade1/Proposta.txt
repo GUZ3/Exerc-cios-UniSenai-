@@ -1,0 +1,2 @@
+Alimentar uma matriz(3x3) de valor inteiro, multiplicando essa matriz por um valor informado
+pelo usuário e escrevendo o conteúdo na matriz multiplicada
