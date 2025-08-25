@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background: #000000;
+    background-image: url("../img/fundo.jpg"); /* caminho da imagem */
+    background-size: cover; /* ajusta para cobrir toda a tela */
+    background-position: center; /* centraliza */
+    background-repeat: no-repeat; /* evita repetição */
+    font-family: Arial, sans-serif;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column; /*coloca elementos em coluna */
+    justify-content: flex-start; /*alinha no topo */
+    align-items: center; /* continua centralizando na horizontal */
+    min-height: 100vh;
+    padding-top: 40px; /* espaço no topo */
+}
+.executarTxt {
+    display: flex;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Título */
+h1 {
+    font-size: 45px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px; /* espaço abaixo do título */
+    margin-top: 50px;
+}
+
+/* Caixa do formulário */
+fieldset {
+    border: none;
+    background: #5252524f;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    width: 500px;
+    color: #fff;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+/* Campo de texto */
+input[type="text"] {
+    
+    width: 100%;
+    padding: 10px;
+    border: 3px solid #727272;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+input[type="text"] {
+    color: #ffffff !important;
+    background-color: #333333 !important;
+}
+
+input[type="text"]:focus {
+    border-color: #7802ff;
+}
+
+/* Botão */
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background: #7802ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #333333;
+}
