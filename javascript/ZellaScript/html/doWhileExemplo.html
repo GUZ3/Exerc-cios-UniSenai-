@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZellaScript - DO/WHILE</title>
+    <link rel="stylesheet" href="../css/IF.css">
+    <link rel="icon" href="../img/iconejs.webp" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <h3>ZellaScript</h3>
+        <div class="menu">
+
+            <nav><a href="../html/index.html"><strong>INÍCIO</strong></a></nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>ESTRUTURAS CONDICIONAIS</strong></a>
+                <div class="dropdown-content">
+                    <a href="IF.html">IF</a>
+                    <a href="swithcase.html">Switch Case</a>
+                </div>
+            </nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>ESTRUTURAS DE REPETIÇÃO</strong></a>
+                <div class="dropdown-content">
+                    <a href="for.html">FOR</a>
+                    <a href="while.html">WHILE</a>
+                    <a href="doWhile.html">DO/WHILE</a>
+                </div>
+            </nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>VETORES</strong></a>
+                <div class="dropdown-content">
+                    <a href="unidimensional.html">Unidimencional</a>
+                    <a href="bidimensional.html">Bidimencional</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <h1><strong>ESTRUTURAS DE REPETIÇÃO</strong></h1>
+    <h2>DO/WHILE</h2>
+    <div class="backtexto">
+        <div class="texto">
+
+            <p>
+                O do/while é uma estrutura de repetição em que o programa executa primeiro um bloco de instruções e só depois verifica se a condição 
+                é verdadeira ou falsa. Enquanto a condição for verdadeira, o bloco continuará sendo repetido, mas se for falsa o laço é encerrado.
+                A principal característica dele é que o bloco sempre será executado pelo menos uma vez, mesmo que a condição já seja falsa desde o início, porque a verificação acontece somente depois da primeira execução.
+            </p>
+
+        </div>
+    </div>
+    <div class="Exemplo">
+
+        <h4>Exemplo</h4>
+        <div class="ExemplosFor">
+            <img src="../img/codDowhile.jpeg" alt="Exemplo 1 do/while">
+            <img src="../img/codDowhile2.jpeg" alt="Exemplo 2 do/while">
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="caixa">
+
+            
+                <div class="Exercícios">
+                    <br>
+                    <h2>Exercícios</h2>
+                    <div class="Exemplo">
+                    <h4><strong>EXEMPLO</strong></h4>
+                    <h5><a href="doWhile.html">Exemplo 1</a></h5>
+                    <div class="proposta">
+                        <p>Contador que vá de 1 a 10 usando do/while</p>
+                    </div>
+                    <form><!--ATENÇÃO-->
+                        <div class="textareaSE">
+                            <textarea name="fonte" cols="70" rows="20">
+                                
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/exibirProc.js"></script>
+    <title>Exemplo</title>
+    <link rel="icon" href="../img/iconejs.webp" type="image/x-icon">
+</head>
+<body>
+    <h2>Exemplo - Exibe inteiros - estrutura "Faça enquanto (do while)"</h2>
+    <section>
+        <form name="exibirInt" action="#" method="get" onsubmit="return exibirProc()">
+
+            <fieldset class="exibir">
+                <br>
+                <legend>Entrada de dados:</legend>
+                <br>
+                    <button type="submit">Enviar</button>
+
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
+
+<style>
+
+body{
+  background-color: rgb(31, 31, 31);
+}
+section {
+    
+    margin-top: 0px auto;
+    
+}
+
+.exibir {
+    width: 300px;
+    margin: 0px auto;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.exibir input{
+    margin: 5px auto;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.exibir button{
+
+    width: 30%;
+    margin: 0 10%;
+    background-color: rgb(124, 124, 124);
+    font-weight: bold;
+    font-size: 16px; 
+    color: white;
+}
+legend {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+label {
+
+    float: left;
+    color: rgb(255, 255, 255);
+    
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+  
+      .container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        
+      }
+  
+      .imagem {
+        position: absolute;
+        top: 20%;
+        left: -200px; /* começa fora da tela */
+        transform: translateY(-50%);
+        width: 800px;
+        animation: mover 10s linear infinite;
+      }
+  
+      @keyframes mover {
+        0% {
+          left: -200px;
+        }
+        100% {
+          left: 100%;
+        }
+}
+
+</style>
+
+<script>
+
+function exibirProc(){
+    let conta= 1;
+
+    do{
+        console.log("Passou a ",conta,"ª vez e o valor é ",conta);
+        conta+=1;
+    }
+    while(conta<=10)
+
+        return false;
+}
+
+</script>
+                                
+                            </textarea>
+                
+                        </div>
+                        <div>
+                            <input type="button" value="Executar" onclick="document.write(fonte.value);" />
+                        </div>
+                    </form>
+
+                    </div>
+
+                    <div class="Atividades">
+                        <h4><strong>ATIVIDADES</strong></h4>
+                        <h5><a href="doWhile1.html">Atividade 1</a></h5>
+                        <h5><a href="doWhile2.html">Atividade 2</a></h5> 
+                        <h5><a href="doWhile3.html">Atividade 3</a></h5>
+                    </div>
+
+                </div>
+                
+
+        </div>
+
+</body>
+
+</html>

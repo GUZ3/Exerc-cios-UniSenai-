@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Simples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .caixa {
+      margin: 5px;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 200px;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    #resultado {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #0077cc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Somar Valores</h2>
+
+  <!-- Caixas para digitar valores -->
+  <input type="number" id="valor1" class="caixa" placeholder="Digite o primeiro número">
+  <input type="number" id="valor2" class="caixa" placeholder="Digite o segundo número">
+
+  <button onclick="calcular()">Calcular</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function calcular() {
+      // Pega os valores digitados e converte para número
+      let a = Number(document.getElementById("valor1").value);
+      let b = Number(document.getElementById("valor2").value);
+      let soma = a + b;
+
+      // Mostra o resultado na tela
+      document.getElementById("resultado").innerHTML = "A soma é: " + soma;
+    }
+  </script>
+</body>
+</html>

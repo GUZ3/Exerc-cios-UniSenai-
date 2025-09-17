@@ -19,6 +19,7 @@ function validaProc(){
 
     media=soma/(qtdAndares*qtdAp);
     console.log("Média de renda do Balança mas não cai:"+media);
+    console.log("A renda total do Balança mas não cai:"+soma);
     
     return false;
 }

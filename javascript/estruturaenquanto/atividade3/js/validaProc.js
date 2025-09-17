@@ -1,21 +1,18 @@
 function validaProc(){
 
-    let num
+    let numero
     let soma=0
-    let cont=1
+    let contador=1
     
-    
-        while(cont<=3){
+        while(contador<=3){
          
-          num=parseInt(prompt("Digite o número"));
-          console.log("O número inserido é: "+ num);
+          numero=parseInt(prompt("Digite o número"));
+          console.log("O número inserido é: "+ numero);
             
-        
-            if (num % 5 == 0) {
-                 soma+=num
-                }
-         
-                cont++
+            if (numero % 5 == 0){
+                 soma+=numero
+            }
+        contador++
      
         }
         console.log("O número e: "+soma);

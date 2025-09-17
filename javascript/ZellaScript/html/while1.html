@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZellaScript - WHILE</title>
+    <link rel="stylesheet" href="../css/IF.css">
+    <link rel="icon" href="../img/iconejs.webp" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <h3>ZellaScript</h3>
+        <div class="menu">
+
+            <nav><a href="../html/index.html"><strong>INÍCIO</strong></a></nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>ESTRUTURAS CONDICIONAIS</strong></a>
+                <div class="dropdown-content">
+                    <a href="IF.html">IF</a>
+                    <a href="swithcase.html">Switch Case</a>
+                </div>
+            </nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>ESTRUTURAS DE REPETIÇÃO</strong></a>
+                <div class="dropdown-content">
+                    <a href="for.html">FOR</a>
+                    <a href="while.html">WHILE</a>
+                    <a href="doWhile.html">DO/WHILE</a>
+                </div>
+            </nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>VETORES</strong></a>
+                <div class="dropdown-content">
+                    <a href="unidimensional.html">Unidimencional</a>
+                    <a href="bidimensional.html">Bidimencional</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <h1><strong>ESTRUTURAS DE REPETIÇÃO</strong></h1>
+    <h2>WHILE</h2>
+    <div class="backtexto">
+        <div class="texto">
+
+            <p>
+                O laço while funciona assim:
+                <br><br>
+                Ele repete um conjunto de instruções enquanto uma condição for verdadeira.
+                Primeiro, o programa verifica se a condição é verdadeira. Se for, ele executa o bloco de ações definido.
+                Depois de executar, ele volta para verificar novamente a condição.
+                Se continuar verdadeira, repete o processo.
+                Quando a condição deixar de ser verdadeira, o laço para e o programa segue para a próxima parte.
+                <br><br>
+                Um detalhe importante: se a condição nunca mudar para falsa, o laço nunca vai terminar, o que chamamos de “loop infinito”.
+            </p>
+
+        </div>
+    </div>
+    <div class="Exemplo">
+
+        <h4>Exemplo</h4>
+        <div class="ExemplosFor">
+            <img src="../img/codWhile.jpeg" alt="Exemplo 1 while">
+            <img src="../img/codFor2.jpeg" alt="Exemplo 2 while">
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="caixa">
+
+            
+                <div class="Exercícios">
+                    <br>
+                    <h2>Exercícios</h2>
+                    <div class="Exemplo">
+                    <h4><strong>EXEMPLO</strong></h4>
+                    <h5><a href="whileExemplo.html">Exemplo 1</a></h5>
+                    </div>
+
+                    <div class="Atividades">
+                        <h4><strong>ATIVIDADES</strong></h4>
+                        <h5><a href="while.html">Atividade 1</a></h5>  
+                        <div class="proposta">
+                            <p>Faça um algorítmo que leia 3 números e imprima seu somatório...</p>
+                        </div>
+                        <form><!--ATENÇÃO-->
+                            <div class="textareaSE">
+                                <textarea name="fonte" cols="70" rows="20">
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/validaProc.js"></script>
+    <title>Atividade 1</title>
+    <link rel="icon" href="../img/iconejs.webp" type="image/x-icon">
+</head>
+
+<body>
+    <font style="font-family: Arial;">
+        <h2>Atividade 1 - Enquanto</h2>
+        <section>
+            <form name="executar" action="#" method="get" onsubmit="return validaProc()">
+
+                <fieldset class="executar">
+                    <br>
+                    <legend>Enquanto:</legend>
+
+                    <button type="submit">Começar!</button>
+
+                </fieldset>
+            </form>
+        </section>
+    </font>
+</body>
+
+</html>
+
+<style>
+
+body{
+  background-color: rgb(31, 31, 31);
+}
+section {
+    
+    margin-top: 0px auto;
+    
+}
+
+.executar {
+    width: 300px;
+    margin: 0px auto;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.executar input{
+    margin: 5px auto;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.executar button{
+
+    width: 30%;
+    margin: 0 10%;
+    background-color: rgb(124, 124, 124);
+    font-weight: bold;
+    font-size: 16px; 
+    color: white;
+}
+legend {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+label {
+
+    float: left;
+    color: rgb(255, 255, 255);
+    
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+  
+      .container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        
+      }
+  
+      .imagem {
+        position: absolute;
+        top: 20%;
+        left: -200px; /* começa fora da tela */
+        transform: translateY(-50%);
+        width: 800px;
+        animation: mover 10s linear infinite;
+      }
+  
+      @keyframes mover {
+        0% {
+          left: -200px;
+        }
+        100% {
+          left: 100%;
+        }
+}
+
+</style>
+
+<script>
+
+function validaProc(){
+    
+    let soma=0;
+    let contador=1;
+    
+    console.log("=== Seja bem-vindo ao Some 3 números! ===\n");
+ 
+    while(contador<=3){
+
+        let numero= parseInt(prompt("Insira o "+contador+"º número"));
+        soma=soma+numero
+        contador++
+    }
+
+    console.log("A soma dos número é: "+soma);
+    alert("A soma dos número é: "+soma);
+
+
+}
+
+</script>
+
+                                    
+                                </textarea>
+                    
+                            </div>
+                            <div>
+                                <input type="button" value="Executar" onclick="document.write(fonte.value);" />
+                            </div>
+                        </form>
+
+                        <h5><a href="while2.html">Atividade 2</a></h5>
+                        <h5><a href="while3.html">Atividade 3</a></h5>
+                    </div>
+
+                </div>
+                
+
+        </div>
+
+</body>
+
+</html>

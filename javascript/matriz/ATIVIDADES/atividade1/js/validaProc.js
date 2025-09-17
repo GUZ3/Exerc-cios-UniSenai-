@@ -28,7 +28,7 @@ function validaProc(){
         for(c=0;c<colunas;c++){
 
             resultado[i][c]=matriz[i][c]*multiplicador
-
+            
         }
 
     }

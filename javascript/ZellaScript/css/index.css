@@ -1,0 +1,137 @@
+
+body {
+    background-image: url('../img/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-size: 50px;
+    
+}
+
+h3  {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+
+p {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Arial', sans-serif;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: rgb(145, 145, 145);
+    
+}
+
+header {
+    height: 60px;
+    align-items: center;
+    background: linear-gradient(to right, #3030304d, #31313146);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 90px;
+    
+}
+
+.menu {
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texto {
+    background-color: rgba(182, 182, 182, 0.301);
+    /*border: 2px solid rgb(54, 54, 54);*/
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.linguagens {
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+}
+
+/* Estilo do menu */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 700px;
+}
+
+/* Container do dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Conteúdo oculto do dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* Links dentro do dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+/* Efeito hover nos links */
+.dropdown-content a:hover {
+    background-color: rgb(206, 206, 206);
+    color: black;
+}
+
+/* Mostrar dropdown quando passar o mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+

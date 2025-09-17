@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZellaScript - FOR</title>
+    <link rel="stylesheet" href="../css/IF.css">
+    <link rel="icon" href="../img/iconejs.webp" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <h3>ZellaScript</h3>
+        <div class="menu">
+
+            <nav><a href="../html/index.html"><strong>INÍCIO</strong></a></nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>ESTRUTURAS CONDICIONAIS</strong></a>
+                <div class="dropdown-content">
+                    <a href="IF.html">IF</a>
+                    <a href="swithcase.html">Switch Case</a>
+                </div>
+            </nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>ESTRUTURAS DE REPETIÇÃO</strong></a>
+                <div class="dropdown-content">
+                    <a href="for.html">FOR</a>
+                    <a href="while.html">WHILE</a>
+                    <a href="doWhile.html">DO/WHILE</a>
+                </div>
+            </nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>VETORES</strong></a>
+                <div class="dropdown-content">
+                    <a href="unidimensional.html">Unidimencional</a>
+                    <a href="bidimensional.html">Bidimencional</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <h1><strong>ESTRUTURAS DE REPETIÇÃO</strong></h1>
+    <h2>FOR</h2>
+    <div class="backtexto">
+        <div class="texto">
+
+            <p>
+                A estrutura FOR é um comando de repetição usado em programação para executar um conjunto de instruções várias vezes de maneira controlada. Ele é composto por três partes principais: a inicialização, que geralmente define uma variável de controle; a condição, que determina até quando o laço deve continuar rodando; e o incremento ou decremento, que altera o valor da variável de controle a cada repetição.
+            <br><br>
+                Em linguagens como C, Java e JavaScript, o for é escrito de forma explícita com essas três partes dentro dos parênteses. Por exemplo, você pode inicializar uma variável começando em zero, definir que o laço só vai rodar enquanto essa variável for menor que cinco e, a cada repetição, aumentar o valor dela em um. Isso faz com que o bloco de código seja executado cinco vezes, de forma previsível.
+            </p>
+
+        </div>
+    </div>
+    <div class="Exemplo">
+
+        <h4>Exemplo</h4>
+        <div class="ExemplosFor">
+            <img src="../img/codFor.jpeg" alt="Exemplo 1 For">
+            <img src="../img/codFor2.jpeg" alt="Exemplo 2 For">
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="caixa">
+
+            
+                <div class="Exercícios">
+                    <br>
+                    <h2>Exercícios</h2>
+                    <div class="Exemplo">
+                    <h4><strong>EXEMPLO</strong></h4>
+                    <h5><a href="for.html">Exemplo 1</a></h5>
+                    <div class="proposta">
+                        <p>Fazer a estrutura para faça com que os números de 1 a 10 de trás para frente</p>
+                    </div>
+                    </div>
+                    <form><!--ATENÇÃO-->
+                        <div class="textareaSE">
+                            <textarea name="fonte" cols="70" rows="20">
+                                
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de repetição para...faca()</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/validaproc.js"></script>
+    <link rel="icon" href="../img/iconejs.webp" type="image/x-icon">
+</head>
+<body>
+    
+    <section>
+
+        <h2>Exemplo - Exibe número inteior - estrutura "para..."(for())</h2>
+        <font face="arial">
+            <form name="frmnumint" action="#" method="get" onsubmit="return validaproc()">
+                <fieldset class="">
+
+                    <legend>Entrada de dados</legend>
+                    <br>
+
+                    <button type="submit">Enviar</button>
+
+                </fieldset>
+            </form>
+        </font>
+    </section>
+</body>
+</html>
+
+<style>
+
+body{
+  background-color: rgb(31, 31, 31);
+}
+section {
+    
+    margin-top: 0px auto;
+    
+}
+
+.cadinteiro {
+    width: 300px;
+    margin: 0px auto;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.cadinteiro input{
+    margin: 5px auto;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.cadinteiro button{
+
+    width: 30%;
+    margin: 0 10%;
+    background-color: rgb(124, 124, 124);
+    font-weight: bold;
+    font-size: 16px; 
+    color: white;
+}
+legend {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+label {
+
+    float: left;
+    color: rgb(255, 255, 255);
+    
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+  
+      .container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        
+      }
+  
+      .imagem {
+        position: absolute;
+        top: 20%;
+        left: -200px; /* começa fora da tela */
+        transform: translateY(-50%);
+        width: 800px;
+        animation: mover 10s linear infinite;
+      }
+  
+      @keyframes mover {
+        0% {
+          left: -200px;
+        }
+        100% {
+          left: 100%;
+        }
+}
+
+</style>
+
+<script>
+
+function validaproc(){
+
+for(let i = 10; i>=1; i--){
+    console.log("Passou a ",i,"ª vez");
+}
+return false;
+}
+
+</script>
+                                
+                            </textarea>
+                
+                        </div>
+                        <div>
+                            <input type="button" value="Executar" onclick="document.write(fonte.value);" />
+                        </div>
+                    </form>
+
+                    <div class="Atividades">
+                        <h4><strong>ATIVIDADES</strong></h4>
+                        <h5><a href="for1.html">Atividade 1</a></h5>
+                            
+                    </div>
+
+                </div>
+                
+
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZellaScript - Switch Case</title>
+    <link rel="stylesheet" href="../css/IF.css">
+    <link rel="icon" href="../img/iconejs.webp" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <h3>ZellaScript</h3>
+        <div class="menu">
+
+            <nav><a href="../html/index.html"><strong>INÍCIO</strong></a></nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>ESTRUTURAS CONDICIONAIS</strong></a>
+                <div class="dropdown-content">
+                    <a href="IF.html">IF</a>
+                    <a href="swithcase.html">Switch Case</a>
+                </div>
+            </nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>ESTRUTURAS DE REPETIÇÃO</strong></a>
+                <div class="dropdown-content">
+                    <a href="for.html">FOR</a>
+                    <a href="while.html">WHILE</a>
+                    <a href="doWhile.html">DO/WHILE</a>
+                </div>
+            </nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>VETORES</strong></a>
+                <div class="dropdown-content">
+                    <a href="unidimensional.html">Unidimencional</a>
+                    <a href="bidimensional.html">Bidimencional</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <h1><strong>ESTRUTURAS CONDICIONAIS</strong></h1>
+    <h2>Switch Case</h2>
+    <div class="backtexto">
+        <div class="texto">
+
+            <p>
+                O switch case é uma estrutura condicional que serve para testar uma variável ou expressão contra vários
+                valores possíveis.
+                É como se fosse um "menu de opções": você compara um valor e executa um bloco de código específico
+                dependendo do caso que combinar.
+
+                Ele funciona assim:
+
+                O valor passado no switch é comparado, um a um, com cada case.
+
+                Quando um case corresponde ao valor, o código dentro dele é executado.
+
+                Normalmente usamos break; no final de cada case para parar a execução (senão ele continua para o próximo
+                caso).
+
+                O default é opcional e serve como um "plano B" (executado se nenhum case for verdadeiro).
+            </p>
+
+        </div>
+    </div>
+    <div class="Exemplo">
+
+        <h4>Exemplo</h4>
+        <img src="../img/codSwitch.png" alt="Exemplo swithcase">
+
+    </div>
+
+    <div class="container">
+        <div class="caixa">
+
+
+            <div class="Exercícios">
+                <br>
+                <h2>Exercícios</h2>
+                <!--<div class="Exemplo">
+                    <h4>Exemplo:</h4>
+                    <h5><a href="#">Exemplo 1</a></h5>
+                    </div>  -->
+
+                <div class="Atividades">
+                    <h4><strong>ATIVIDADES</strong></h4>
+                    <h5><a href="swithcase.html">Atividade 1</a></h5>
+                    <div class="proposta">
+                        <p>Faça um programa que peça a idade do usuário e fale se é "bebê" 0 a 3 anos, "criança" 4 a 10
+                            anos, "adolescente" 11 a 18 anos, e "Adulto" mais de 18 anos</p>
+                    </div>
+
+                    <form><!--ATENÇÃO-->
+                        <div class="textareaSE">
+                            <textarea name="fonte" cols="70" rows="20">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura CASO javascript - Atividade 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/valproc.js"></script>
+    <link rel="icon" href="../img/iconejs.webp" type="image/x-icon">
+</head>
+<body>
+    <h2>Estruturas Caso (Switch() - Atividade 1)</h2>
+    <section>
+
+    <font face="arial">
+
+        <form name="frmnumint" action="#" method="get" onsubmit="return procFormulario()">
+
+        <fieldset class="cadnumint">
+
+            <legend>Entrada de dados</legend>
+            <br>
+            <label for="numint">Informe um número inteiro: </label>
+            <input type="text" name="textnumint" id="numint"><br><br>
+            <button type="reset">Limpar</button><button type="submit">Enviar</button>
+
+        </fieldset>
+
+    </form>
+    </font>
+    </section>
+</body>
+</html>
+<style>
+
+    section {
+        
+        margin-top: 0px auto;
+        
+    }
+
+    .cadnumint {
+        width: 300px;
+        margin: 0px auto;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+    }
+
+    .cadnumint input{
+        margin: 5px auto;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .cadnumint button{
+
+        width: 30%;
+        margin: 0 10%;
+        background-color: rgb(0, 89, 167);
+        font-weight: bold;
+        font-size: 16px; 
+        color: white;
+    }
+
+    label {
+
+        float: left
+        
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 50px;
+        color: seashell;
+    }
+
+    body{
+        background-image : url("../img/imgCaso/tijolos.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+</style>
+
+<script>
+
+    function procFormulario() {
+
+        if (document.frmnumint.textnumint.value == "") {
+
+            alert("Preencha o campo de idade");
+            document.frmnumint.textnumint.focus();
+            return false
+
+        } else {
+
+            let numint = parseInt(document.getElementById("numint").value)
+
+            switch (true) {
+
+                case (numint >= 0 && numint <= 3):
+
+                    console.log("Bebê");
+                    return false;
+                    break;
+
+                case (numint >= 4 && numint <= 10):
+
+                    console.log("Criança");
+                    return false;
+                    break;
+
+                case (numint >= 11 && numint <= 18):
+
+                    console.log("adolescente");
+                    return false;
+                    break;
+
+                default:
+
+                    console.log("adulto")
+                    return false;
+                    break;
+
+            }
+        }
+
+    }
+
+</script>
+        
+                                    
+                                </textarea>
+
+                        </div>
+                        <div>
+                            <input type="button" value="Executar" onclick="document.write(fonte.value);" />
+                        </div>
+                    </form>
+                    <h5><a href="swithcase2.html">Atividade 2</a></h5>
+                </div>
+
+            </div>
+
+
+        </div>
+
+</body>
+
+</html>

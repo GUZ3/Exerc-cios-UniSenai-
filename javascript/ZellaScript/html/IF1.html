@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZellaScript - IF (SE)</title>
+    <link rel="stylesheet" href="../css/IF.css">
+    <link rel="icon" href="../img/iconejs.webp" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <h3>ZellaScript</h3>
+        <div class="menu">
+
+            <nav><a href="../html/index.html"><strong>INÍCIO</strong></a></nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>ESTRUTURAS CONDICIONAIS</strong></a>
+                <div class="dropdown-content">
+                    <a href="IF.html">IF</a>
+                    <a href="swithcase.html">Switch Case</a>
+                </div>
+            </nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>ESTRUTURAS DE REPETIÇÃO</strong></a>
+                <div class="dropdown-content">
+                    <a href="for.html">FOR</a>
+                    <a href="while.html">WHILE</a>
+                    <a href="doWhile.html">DO/WHILE</a>
+                </div>
+            </nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>VETORES</strong></a>
+                <div class="dropdown-content">
+                    <a href="unidimensional.html">Unidimencional</a>
+                    <a href="bidimensional.html">Bidimencional</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <h1><strong>ESTRUTURAS CONDICIONAIS</strong></h1>
+    <h2>IF/ELSE IF/ELSE</h2>
+    <div class="backtexto">
+        <div class="texto">
+
+            <p>
+                A estrutura condicional SE é um recurso utilizado na programação para permitir que o programa tome decisões. 
+                Ela avalia uma condição lógica, que pode ser verdadeira ou falsa. 
+                Se a condição for verdadeira, o programa executa um conjunto de comandos específicos. 
+                Caso a condição seja falsa, o programa pode simplesmente não executar nada ou seguir um caminho alternativo, utilizando o SENÃO. 
+                Esse tipo de estrutura é fundamental porque permite que o programa siga diferentes fluxos de execução de acordo com as situações, 
+                tornando-o mais dinâmico e inteligente.
+            </p>
+
+        </div>
+    </div>
+    <div class="Exemplo">
+
+        <h4>Exemplo</h4>
+        <img src="../img/codIF.png" alt="">
+
+    </div>
+    
+    <div class="container">
+        <div class="caixa">
+
+            
+                <div class="Exercícios">
+                    <br>
+                    <h2>Exercícios</h2>
+                    <!--<div class="Exemplo">
+                    <h4>Exemplo:</h4>
+                    <h5><a href="#">Exemplo 1</a></h5>
+                    </div>  -->
+
+                    <div class="Atividades">
+                        <h4><strong>ATIVIDADES</strong></h4>
+                        <h5><a href="IF.html">Atividade 1</a></h5>
+                            <div class="proposta">
+                                <p>desenvolva uma aplicação web que, a partir de 3 notas de um aluno, informados pelo usuário, calcule a sua média e de acordo com a mesma emita a situação do aluno "Aprovado", "Recuperação" ou "reprovado"..Lembrando que a média para aprovação é de 7 ou maior e entre 5 e 6,9 o aluno está em recuperação e abaixo disso, reprovado.</p>
+                            </div>
+                    <form><!--ATENÇÃO-->
+                    <div class="textareaSE">
+                        <textarea name="fonte" cols="70" rows="20">
+                            <!DOCTYPE html>
+                            <html lang="pt-br">
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>ESTRUTURA SE JAVASCRIPT</title>
+                                <link rel="stylesheet" href="css/config.css">
+                                <script src="js/valproc.js"></script>
+                            
+                                <link rel="icon" href="../img/iconejs.webp" type="image/x-icon">
+</head>
+                            <body>
+                                <section><h2>ATIVIDADE - Calculo média de aluno - Estrutura condicional  "se"(if)</h2>
+                                    <font face="Arial">
+                                        <form name="frmnotas" action"#" method="get" onsubmit="return procFormulario()">
+                            
+                                            <fieldset class="cadmedialuno1">
+                            
+                                                    <legend>Entrada de dados</legend>
+                                                    <br>
+                                                    <label for="num1">Nota 1:</label>
+                                                    <input type="text" name="txtnum1" id="num1">
+                                                    <br><br>
+                                                    <label for="num2">Nota 2:</label>
+                                                    <input type="text" name="txtnum2" id="num2">
+                                                    <br><br>
+                                                    <label for="num3">Nota 3:</label>
+                                                    <input type="text" name="txtnum3" id="num3">
+                                                    <br>
+                                                    <button type="reset">Limpar</button><button type="submit">Enviar</button>
+                            
+                                            </fieldset>  
+                            
+                                        </form> 
+                                    </font>
+                                </section>
+                            </body>
+                            </html>
+                            
+                            <style>
+
+                                section {
+                                    
+                                    margin-top: 0px auto;
+                                    
+                                }
+                                
+                                .cadmedialuno1 {
+                                    width: 300px;
+                                    margin: 0px auto;
+                                    font-weight: bold;
+                                    margin-bottom: 10px;
+                                
+                                }
+                                
+                                .cadmedialuno1 input{
+                                    margin: 5px auto;
+                                    width: 100%;
+                                    padding: 5px 0;
+                                }
+                                
+                                .cadmedialuno1 button{
+                                
+                                    width: 30%;
+                                    margin: 0 10%;
+                                    background-color: rgb(0, 89, 167);
+                                    font-weight: bold;
+                                    font-size: 16px; 
+                                    color: white;
+                                }
+                                
+                                label {
+                                
+                                    float: left
+                                }
+                                
+                                h2 {
+                                    text-align: center;
+                                    margin-top: 0px;
+                                    margin-bottom: 10px;
+                                    font-size: 50px;
+                                }
+                            </style>
+
+                            <script>
+                                function procFormulario(){
+                            //validação de campos
+                                    if(document.frmnotas.txtnum1.value==""){
+
+                                        alert("Informe o primeiro número");
+                                        document.frmnotas.txtnum1.focus();
+                                        return false;
+                                    }else if(document.frmnotas.txtnum2.value==""){
+
+                                        alert("Informe o segundo número");
+                                        document.frmnotas.txtnum2.focus();
+                                        return false;
+                                    }else if(document.frmnotas.txtnum3.value==""){
+
+                                            alert("Informe o terceiro número");
+                                            document.frmnotas.txtnum3.focus();
+                                            return false;
+                                    }else{
+                                            //Processamento do programa
+                                        let nota1 = parseFloat(document.getElementById('num1').value)
+                                        let nota2 = parseFloat(document.getElementById('num2').value)
+                                        let nota3 = parseFloat(document.getElementById('num3').value)
+                                        let media = (nota1 + nota2 + nota3) / 3;
+
+                                        if(media>=7){
+
+                                            alert("Sua média foi "+ media.toFixed(2) + ", Você foi aprovado!");
+
+                                        }else if(media>=5 & media<=6.9){
+
+                                            alert("Sua média foi "+ media.tofixed(2) + ", Você está de recuperação!");
+
+                                        }else{
+
+                                            alert("Sua média foi "+ media.toFixed(2) + ", Você foi reprovado!");
+                                        }
+                                    }
+
+                                }
+
+                            </script>
+                            
+                        </textarea>
+            
+                    </div>
+                    <div>
+                        <input type="button" value="Executar" onclick="document.write(fonte.value);" />
+                    </div>
+                </form>
+                        <h5><a href="IF2.html">Atividade 2</a></h5>
+                    </div>
+
+                </div>
+                
+
+        </div>
+
+</body>
+
+</html>

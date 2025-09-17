@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZellaScript - Unidimencional</title>
+    <link rel="stylesheet" href="../css/IF.css">
+    <link rel="icon" href="../img/iconejs.webp" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <h3>ZellaScript</h3>
+        <div class="menu">
+
+            <nav><a href="../html/index.html"><strong>INÍCIO</strong></a></nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>ESTRUTURAS CONDICIONAIS</strong></a>
+                <div class="dropdown-content">
+                    <a href="IF.html">IF</a>
+                    <a href="swithcase.html">Switch Case</a>
+                </div>
+            </nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>ESTRUTURAS DE REPETIÇÃO</strong></a>
+                <div class="dropdown-content">
+                    <a href="for.html">FOR</a>
+                    <a href="while.html">WHILE</a>
+                    <a href="doWhile.html">DO/WHILE</a>
+                </div>
+            </nav>
+
+            <nav class="dropdown">
+                <a href="#"><strong>VETORES</strong></a>
+                <div class="dropdown-content">
+                    <a href="unidimensional.html">Unidimencional</a>
+                    <a href="bidimensional.html">Bidimencional</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <h1><strong>VETOR</strong></h1>
+    <h2>Unidimensional</h2>
+    <div class="backtexto">
+        <div class="texto">
+
+            <p>
+            Um vetor unidimensional em programação é uma estrutura de dados usada para armazenar uma sequência de elementos do mesmo tipo (números, caracteres, objetos, etc.) em uma única linha contínua de memória.
+            <br><br>
+            Ele é chamado de unidimensional porque possui apenas uma dimensão, ou seja, uma única forma de organização: cada elemento é acessado por meio de um índice (posição dentro do vetor).
+            <br><br>
+            Um vetor de 5 números inteiros poderia armazenar [10, 20, 30, 40, 50].
+            <br><br>
+            O primeiro elemento estaria na posição 0 (ou 1, dependendo da linguagem), o segundo na posição 1, e assim por diante.
+            </p>
+
+        </div>
+    </div>
+    <div class="Exemplo">
+
+        <h4>Exemplo</h4>
+        <div class="ExemplosFor">
+            <img src="../img/codVetor.jpeg" alt="Exemplo vetor">
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="caixa">
+
+            
+                <div class="Exercícios">
+                    <br>
+                    <h2>Exercícios</h2>
+                    <div class="Exemplo">
+                    <h4><strong>EXEMPLO</strong></h4>
+                    <h5><a href="unidimensionalExemplo.html">Exemplo 1</a></h5>
+                    </div>
+
+                    <div class="Atividades">
+                        <h4><strong>ATIVIDADES</strong></h4>
+                        <h5><a href="unidimensional1.html">Atividade 1</a></h5>
+                        <h5><a href="unidimensional.html">Atividade 2</a></h5> 
+                        <div class="proposta">
+
+                            <p>Faça um algoritmo para ler as notas obtidas pelos aluno, e depois exibir um relatório das notas iguais
+                                ou superiores a 7,5.e  a quantidade de notas iguais ou superiores a 7,5.
+                            </p>
+
+                            <form><!--ATENÇÃO-->
+                                <div class="textareaSE">
+                                    <textarea name="fonte" cols="70" rows="20">
+                                        
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/validaProc.js"></script>
+    <title>Vetor Unidimensional</title>
+    <link rel="icon" href="../img/iconejs.webp" type="image/x-icon">
+</head>
+
+<body>
+    <font style="font-family: Arial;">
+        <h2>Atividade 2 - Notas maiores que 7,5 com contador</h2>
+        <section>
+            <form name="executar" action="#" method="get" onsubmit="return validaProc()">
+
+                <fieldset class="executar">
+                    <br>
+                    <legend>Entrada de dados:</legend>
+
+                    <button type="submit">Começar!</button>
+
+                </fieldset>
+            </form>
+        </section>
+    </font>
+</body>
+
+</html>  
+
+<style>
+
+body{
+  background-color: rgb(31, 31, 31);
+}
+section {
+    
+    margin-top: 0px auto;
+    
+}
+
+.executar {
+    width: 300px;
+    margin: 0px auto;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.executar input{
+    margin: 5px auto;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.executar button{
+
+    width: 30%;
+    margin: 0 10%;
+    background-color: rgb(124, 124, 124);
+    font-weight: bold;
+    font-size: 16px; 
+    color: white;
+}
+legend {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+label {
+
+    float: left;
+    color: rgb(255, 255, 255);
+    
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+  
+      .container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        
+      }
+  
+      .imagem {
+        position: absolute;
+        top: 20%;
+        left: -200px; /* começa fora da tela */
+        transform: translateY(-50%);
+        width: 800px;
+        animation: mover 10s linear infinite;
+      }
+  
+      @keyframes mover {
+        0% {
+          left: -200px;
+        }
+        100% {
+          left: 100%;
+        }
+}
+
+</style>
+
+<script>
+
+function validaProc(){
+
+let notas=[];
+let contador=0;
+
+for(let i=0;i<3;i++){
+
+    notas[i]=parseFloat(prompt("Qual a "+(i+1)+"ª nota?"));
+
+}
+
+for(let i=0;i<3;i++){
+
+    if(notas[i]>=7.5){
+        console.log("A nota: "+notas[i]+" é maior do que 7,5✅");
+        contador++
+    } else {
+        console.log("A nota: "+notas[i]+" é menor do que 7,5❌");
+    }   
+}
+
+console.log("Quantidade de notas maiores do que 7,5: "+contador);
+alert("Quantidade de notas maiores do que 7,5: "+contador);
+
+for(let i=0;i<3;i++){
+
+    if(notas[i]>=7.5){          
+        alert("A nota: "+notas[i]+" é maior do que 7,5✅");
+    } else {
+        alert("A nota: "+notas[i]+" é menor do que 7,5❌");
+    }
+}
+
+
+
+return false;
+}
+
+</script>
+                                        
+                                    </textarea>
+                        
+                                </div>
+                                <div>
+                                    <input type="button" value="Executar" onclick="document.write(fonte.value);" />
+                                </div>
+                            </form>
+
+                        </div>
+
+                        <h5><a href="unidimensional3.html">Atividade 3</a></h5>
+                        <h5><a href="unidimensional4.html">Atividade 4</a></h5>
+                    </div>
+
+                </div>
+                
+
+        </div>
+
+</body>
+
+</html>
