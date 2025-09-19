@@ -3,7 +3,7 @@ body {
     padding: 0;
 
     background: #000000;
-    background-image: url("../img/fundo.jpg"); /* caminho da imagem */
+    /*background-image: url("../img/fundo.jpg"); /* caminho da imagem */
     background-size: cover; /* ajusta para cobrir toda a tela */
     background-position: center; /* centraliza */
     background-repeat: no-repeat; /* evita repetição */
